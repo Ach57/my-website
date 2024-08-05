@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title> Login and Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to the IndoTechLogin webPage">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel = 'icon' href="./images/logo.jpeg">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header-container">
+                <h1>Indotech: Industrial Garage Doors</h1>
+                <img src="./images/logo.jpeg">
+            </div>
+        </header>
+        <main class="login-content">
+            <div class="login-container"> <!--Login-->
+                <form>
+                    <legend>Login form</legend><br>
+                    <label><strong> User name: </strong></label>
+                    <input id="login-username" type="text" placeholder="Enter your user name" required><br><br>
+                    <label><strong>Password:</strong></label>
+                    <input id="login-password" type="password" placeholder="Enter your password" required>
+
+                    <br><br>
+
+                    <button type="button" onclick="authentication()">Login</button>
+                    
+
+                </form>
+
+            </div>
+
+        </main>
+
+        
+        <footer>
+
+            <p><strong>&copy INDOTECH, 2004-2024. All rights reserved.</strong></p>
+
+        </footer>
+
+
+        <script src="./js/index.js"></script>
+    </body>
+
+
+
+</html>

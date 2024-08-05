@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Admin Section</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Welcome to the IndoTechLogin admin webPage">
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel = 'icon' href="./images/logo.jpeg">
+    </head>
+
+    <body>  
+        <header>
+            <div class="header-container">
+                <h1>Indotech: Industrial Garage Doors</h1>
+                <img src="./images/logo.jpeg">
+            </div>
+        </header>
+
+            <div class="admin-dashboard">
+            <nav>
+                <ul>
+                    <li>
+                       <a href="./admin.html"> Dashboard </a>   
+                    </li>
+                    <li>
+                        <a href="./sendrequest.html">Send Request</a>
+                    </li>
+                    <li>
+                        <a href="./Inventory.html">Review Inventory</a>
+                    </li>
+
+                    <li>
+                        <a href="./Review.html">Review Tasks</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="logout-button">
+            <button type="button" onclick="logout()">Logout</button>
+        </div>
+
+
+        <div class="admin-section-box">
+            <div class="admin-section-list">
+                <div class="header-timer">
+                <h1>Dashboard</h1>
+                <p id="current-time"></p>
+                </div>
+            </div>
+                <!--Current Tasks in progress-->
+            <div class="task-box"> 
+                <div class="task-min-box">
+                        <h3>TASK 1</h3>
+                        <h4>Description:</h4>
+                        <div class="progress-bar-box">
+                            <h5>Progression Bar:</h5>
+                            
+                            <div class="progress-container">
+                                <div class="progress-bar" id="progress-bar"></div>
+                            </div>
+
+                            <div class="timer-box" id="timer">00:00</div> <!--Timer-->
+                        </div>
+
+                        <button onclick="startProgress()">Start Progression</button>
+                </div>
+                <div class="task-min-box">
+                    <h3>TASK 2</h3>
+                    <h4>Description:</h4>
+                    <div class="progress-bar-box">
+                        <h5>Progression Bar:</h5>
+                        
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+
+                        <div class="timer-box" id="timer">00:00</div> <!--Timer-->
+                    </div>
+
+                    <button onclick="startProgress()">Start Progression</button>
+                    
+                </div>
+                <div class="task-min-box">
+                    <h3>TASK 3</h3>
+                    <h4>Description:</h4>
+                    <div class="progress-bar-box">
+                        <h5>Progression Bar:</h5>
+                        
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+
+                        <div class="timer-box" id="timer">00:00</div> <!--Timer-->
+                    </div>
+
+                    <button onclick="startProgress()">Start Progression</button>
+                </div>
+                <div class="task-min-box">
+                    <h3>TASK 4</h3>
+                    <h4>Description:</h4>
+                    <div class="progress-bar-box">
+                        <h5>Progression Bar:</h5>
+                        
+                        <div class="progress-container">
+                            <div class="progress-bar" id="progress-bar"></div>
+                        </div>
+
+                        <div class="timer-box" id="timer">00:00</div> <!--Timer-->
+                    </div>
+
+                    <button onclick="startProgress()">Start Progression</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        
+
+
+ 
+        <footer>
+
+            <p><strong>&copy INDOTECH, 2004-2024. All rights reserved.</strong></p>
+
+        </footer>
+
+
+        <script src="./js/script.js"></script>
+        <script src="./js/timer.js"></script>
+    </body>
+
+
+
+</html>
